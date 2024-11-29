@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
-    <link rel="stylesheet" href="css/nain.css">
+    <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
+    
+        <h1>Quiz Game</h1>
+        <div id="category-selection">
+            <label for="categories">Choose a category:</label>
+            <select id="categories">
+                <option value="general">General</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div id="quiz-section" class="hidden">
+            <p id="timer">Time: 10</p>
+            <p id="question"></p>
+            <div id="answers"></div>
+        </div>
+        <div id="result-section" class="hidden">
+            <h2 id="result-message"></h2>
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+</body>
     
 </body>
 </html>
