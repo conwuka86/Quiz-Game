@@ -25,3 +25,18 @@ const QUESTIONS = {
   let intervalId = null;
   
   /*----- cached elements -----*/
+  const startScreen = document.getElementById("start-screen");
+  const quizScreen = document.getElementById("quiz-screen");
+  const endScreen = document.getElementById("end-screen");
+  const categorySelect = document.getElementById("category-select");
+  const startBtn = document.getElementById("start-btn");
+  const questionEl = document.getElementById("question");
+  const answersEl = document.getElementById("answers");
+  const timerEl = document.getElementById("timer");
+  const resultMessage = document.getElementById("result-message");
+  const finalScore = document.getElementById("final-score");
+  const restartBtn = document.getElementById("restart-btn");
+  const lastScoreEl = document.getElementById("last-score");
+  
+
+  
