@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Game</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="css/main.css">
+ <script defer src="js/main.js"></script>
 </head>
 <body>
-    
-        <h1>Quiz Game</h1>
-        <div id="category-selection">
-            <label for="categories">Choose a category:</label>
-            <select id="categories">
-                <option value="general">General</option>
-                <option value="science">Science</option>
-                <option value="history">History</option>
-            </select>
-            <button id="start-btn">Start Quiz</button>
-        </div>
-        <div id="quiz-section" class="hidden">
-            <p id="timer">Time: 10</p>
-            <p id="question"></p>
-            <div id="answers"></div>
-        </div>
-        <div id="result-section" class="hidden">
-            <h2 id="result-message"></h2>
-            <button id="restart-btn">Restart Game</button>
-        </div>
+  <div id="quiz-container">
+    <h1>Quiz Game</h1>
+    <div id="start-screen">
+      <label for="category-select">Choose a Category:</label>
+      <select id="category-select">
+        <option value="general">General Knowledge</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+      </select>
+      <button id="start-btn">Start Quiz</button>
+      <p id="last-score"></p>
     </div>
+    <div id="quiz-screen" class="hidden">
+      <div id="question-timer">Time Left: <span id="timer">20</span>s</div>
+      <div id="question"></div>
+      <div id="answers"></div>
+    </div>
+    <div id="end-screen" class="hidden">
+      <h2 id="result-message"></h2>
+      <p>Your Score: <span id="final-score"></span></p>
+      <button id="restart-btn">Play Again</button>
+    </div>
+  </div>
 </body>
-    
-</body>
+
 </html>
+
