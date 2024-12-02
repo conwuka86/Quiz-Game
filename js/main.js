@@ -21,7 +21,7 @@ const QUESTIONS = {
   let category = null;
   let currentQuestionIndex = 0;
   let score = 0;
-  let timer = 20;
+  let timer = 10;
   let intervalId = null;
   
   /*----- cached elements -----*/
@@ -38,5 +38,11 @@ const QUESTIONS = {
   const restartBtn = document.getElementById("restart-btn");
   const lastScoreEl = document.getElementById("last-score");
   
+/*----- event listeners -----*/
+startBtn.addEventListener("click", startQuiz);
+answersEl.addEventListener("click", checkAnswer);
+restartBtn.addEventListener("click", restartQuiz);
+
+/*----- functions -----*/
 
   
