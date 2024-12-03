@@ -1,19 +1,19 @@
 /*----- constants -----*/
 const QUESTIONS = {
     general: [
-      { question: "What is the capital of France?", answers: ["Paris", "London", "Berlin"], correct: 0 },
+      { question: "What is the capital of France?", answers: ["London", "Berlin", "Paris"], correct: 2 },
       { question: "Which is the largest ocean?", answers: ["Atlantic", "Pacific", "Indian"], correct: 1 },
       { question: "Who wrote 'Romeo and Juliet'?", answers: ["Shakespeare", "Dickens", "Tolkien"], correct: 0 },
       { question: "What is the smallest country in the world?", answers: ["Vatican City", "Monaco", "San Marino"], correct: 0 },
-      { question: "What is the national animal of India?", answers: ["Tiger", "Elephant", "Peacock"], correct: 0 },
+      { question: "What is the national animal of India?", answers: ["Elephant", "Peacock", "Tiger"], correct: 2 },
       { question: "Which planet is known as the Red Planet?", answers: ["Mars", "Jupiter", "Saturn"], correct: 0 },
       { question: "Who painted the Mona Lisa?", answers: ["Da Vinci", "Van Gogh", "Picasso"], correct: 0 },
-      { question: "Which country gifted the Statue of Liberty to the USA?", answers: ["France", "Italy", "Germany"], correct: 0 },
-      { question: "What is the hardest natural substance on Earth?", answers: ["Diamond", "Gold", "Iron"], correct: 0 },
+      { question: "Which country gifted the Statue of Liberty to the USA?", answers: ["Italy", "Germany", "France"], correct: 0 },
+      { question: "What is the hardest natural substance on Earth?", answers: ["Gold", "Diamond", "Iron"], correct: 1 },
       { question: "What is the longest river in the world?", answers: ["Nile", "Amazon", "Yangtze"], correct: 0 },
     ],
     math: [
-      { question: "What is 5 + 3?", answers: ["8", "10", "6"], correct: 0 },
+      { question: "What is 5 + 3?", answers: ["10", "8", "6"], correct: 1 },
       { question: "What is 12 x 2?", answers: ["24", "20", "26"], correct: 0 },
       { question: "What is the square root of 81?", answers: ["9", "8", "7"], correct: 0 },
       { question: "What is 100 divided by 4?", answers: ["25", "20", "30"], correct: 0 },
