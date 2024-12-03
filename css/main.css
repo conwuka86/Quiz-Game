@@ -4,7 +4,7 @@ body {
     text-align: center;
     background-color: #dcd0d0;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
   }
   
   #quiz-container {
@@ -14,6 +14,7 @@ body {
     background: rgb(205, 198, 198);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-spacing: 4px 4rem;
   }
 
   .hidden {
@@ -23,11 +24,12 @@ body {
   button {
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: #040c14;
     color: white;
-    border: none;
+    border: dotted;
     border-radius: 5px;
     cursor: pointer;
+    border-spacing: 4px 10rem;
   }
   
   button:hover {
