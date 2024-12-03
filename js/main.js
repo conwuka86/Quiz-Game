@@ -40,6 +40,7 @@ const QUESTIONS = {
   
   /*----- state variables -----*/
   let category = null;
+  let currentQuestions = [];
   let currentQuestionIndex = 0;
   let score = 0;
   let timer = 20;
@@ -71,6 +72,10 @@ const QUESTIONS = {
     currentQuestionIndex = 0;
     timer = 20;
     lastScoreEl.textContent = "";
+  
+    // Shuffle and select 5 random questions
+    currentQuestions = shuffleArray(QUESTIONS[category]).slice(0, 5);
+  
     displayQuestion();
     startScreen.classList.add("hidden");
     quizScreen.classList.remove("hidden");
@@ -88,7 +93,7 @@ const QUESTIONS = {
   }
   
   function displayQuestion() {
-    const questionData = QUESTIONS[category][currentQuestionIndex];
+    const questionData = currentQuestions[currentQuestionIndex];
     questionEl.textContent = questionData.question;
     answersEl.innerHTML = questionData.answers
       .map((answer, index) => `<button data-index="${index}">${answer}</button>`)
@@ -98,15 +103,15 @@ const QUESTIONS = {
   function checkAnswer(event) {
     if (!event.target.matches("button")) return;
     const selectedIndex = parseInt(event.target.dataset.index, 10);
-    const questionData = QUESTIONS[category][currentQuestionIndex];
+    const questionData = currentQuestions[currentQuestionIndex];
     if (selectedIndex === questionData.correct) {
       score++;
     }
-    if (currentQuestionIndex < QUESTIONS[category].length - 1) {
+    if (currentQuestionIndex < currentQuestions.length - 1) {
       currentQuestionIndex++;
       displayQuestion();
     } else {
-      endGame(score >= 5 ? "Pass" : "Fail");
+      endGame(score >= 3 ? "Pass" : "Fail");
     }
   }
   
@@ -126,4 +131,11 @@ const QUESTIONS = {
     lastScoreEl.textContent = lastScore ? `Last Score: ${lastScore}` : "";
   }
   
+  // function to shuffle an array
+  function shuffleArray(array) {
+    return array
+      .map((item) => ({ item, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ item }) => item);
+  }
   
