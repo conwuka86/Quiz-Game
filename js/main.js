@@ -15,14 +15,14 @@ const QUESTIONS = {
     math: [
       { question: "What is 5 + 3?", answers: ["10", "8", "6"], correct: 1 },
       { question: "What is 12 x 2?", answers: ["24", "20", "26"], correct: 0 },
-      { question: "What is the square root of 81?", answers: ["9", "8", "7"], correct: 0 },
-      { question: "What is 100 divided by 4?", answers: ["25", "20", "30"], correct: 0 },
+      { question: "What is the square root of 81?", answers: ["7", "8", "9"], correct: 2 },
+      { question: "What is 100 divided by 4?", answers: ["30", "20", "25"], correct: 2 },
       { question: "What is 7 x 6?", answers: ["42", "36", "48"], correct: 0 },
       { question: "What is 15% of 200?", answers: ["30", "20", "25"], correct: 0 },
-      { question: "What is 11 squared?", answers: ["121", "111", "101"], correct: 0 },
+      { question: "What is 11 squared?", answers: ["100", "121", "101"], correct: 1 },
       { question: "What is the value of π (pi) rounded to 2 decimal places?", answers: ["3.14", "3.15", "3.16"], correct: 0 },
       { question: "What is 18 - 9?", answers: ["9", "8", "7"], correct: 0 },
-      { question: "What is the cube root of 27?", answers: ["3", "4", "5"], correct: 0 },
+      { question: "What is the cube root of 27?", answers: ["5", "4", "3"], correct: 2 },
     ],
     science: [
       { question: "What planet is closest to the sun?", answers: ["Mercury", "Venus", "Mars"], correct: 0 },
