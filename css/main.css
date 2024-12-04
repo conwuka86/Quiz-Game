@@ -1,10 +1,18 @@
 /* main.css */
+
 body {
+  display: grid;
+}
+
+body {
+    display: grid;
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #dcd0d0;
     margin: 0;
     padding: 30px;
+    font-size: 35px;
+    min-height: 100vh;
   }
   
   #quiz-container {
