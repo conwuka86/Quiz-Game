@@ -2,6 +2,7 @@
 
 body {
   display: grid;
+  display: flex;
 }
 
 body {
@@ -29,6 +30,9 @@ body {
     display: none;
   }
   
+  button {
+    display: flex;
+  }
   button {
     padding: 10px 20px;
     margin-top: 10px;
