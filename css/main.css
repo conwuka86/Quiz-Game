@@ -16,14 +16,17 @@ body {
     min-height: 100vh;
   }
   
+
   #quiz-container {
     max-width: 600px;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     background: rgb(205, 198, 198);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-spacing: 4px 4rem;
+    align-items: center;
+    justify-content:center;
   }
 
   .hidden {
@@ -32,17 +35,30 @@ body {
   
   button {
     display: flex;
+    display: grid
   }
   button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #040c14;
+    padding: 20px 40px;
+    margin-top: 30px;
+    background-color: #324252;
     color: white;
     border: dotted;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    border-spacing: 4px 10rem;
+    border-spacing: 8px 20rem;
+    align-items: center;
+    justify-content: space-between;
   }
+  
+  #category-select {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Optional: Adds a border */
+  }
+  
   
   button:hover {
     background-color: #0056b3;
