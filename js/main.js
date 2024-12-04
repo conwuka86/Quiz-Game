@@ -27,13 +27,13 @@ const QUESTIONS = {
     science: [
       { question: "What planet is closest to the sun?", answers: ["Mercury", "Venus", "Mars"], correct: 0 },
       { question: "What is the chemical symbol for water?", answers: ["H2O", "CO2", "O2"], correct: 0 },
-      { question: "What gas do plants absorb from the atmosphere?", answers: ["CO2", "Oxygen", "Nitrogen"], correct: 0 },
-      { question: "What is the center of an atom called?", answers: ["Nucleus", "Proton", "Electron"], correct: 0 },
-      { question: "What is the largest organ in the human body?", answers: ["Skin", "Heart", "Liver"], correct: 0 },
-      { question: "What force keeps us on the ground?", answers: ["Gravity", "Magnetism", "Friction"], correct: 0 },
+      { question: "What gas do plants absorb from the atmosphere?", answers: ["Air", "CO2", "Nitrogen"], correct: 1 },
+      { question: "What is the center of an atom called?", answers: ["Nucleus", "Centrum", "Electron"], correct: 0 },
+      { question: "What is the largest organ in the human body?", answers: ["Heart", "Skin", "Liver"], correct: 1 },
+      { question: "What force keeps us on the ground?", answers: ["Love", "Magnetism", "Gravity"], correct: 2},
       { question: "What is the chemical symbol for gold?", answers: ["Au", "Ag", "Fe"], correct: 0 },
       { question: "What is the powerhouse of the cell?", answers: ["Mitochondria", "Nucleus", "Ribosome"], correct: 0 },
-      { question: "What do bees collect from flowers?", answers: ["Nectar", "Pollen", "Honey"], correct: 0 },
+      { question: "What do bees collect from flowers?", answers: ["Pollen", "Necter", "Honey"], correct: 1 },
       { question: "Which planet has the most moons?", answers: ["Saturn", "Jupiter", "Uranus"], correct: 0 },
     ],
   };
@@ -111,7 +111,7 @@ const QUESTIONS = {
       currentQuestionIndex++;
       displayQuestion();
     } else {
-      endGame(score >= 3 ? "Pass" : "Fail");
+      endGame(score >= 5 ? "Pass" : "Fail");
     }
   }
   
