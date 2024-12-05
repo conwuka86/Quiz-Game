@@ -15,7 +15,6 @@ Quiz game is a game that text intellectual ability. The game does this by taskin
 
 # Getting Started
 
-[Click to View Project Planning](your Trello url here)
 [Click to Play Quiz Game!](https://conwuka86.github.io/Quiz-Game/)
 
 Quiz Game main page is opened.
