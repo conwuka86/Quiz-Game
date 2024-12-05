@@ -3,8 +3,8 @@
 Quiz game is a game that text intellectual ability. The game does this by tasking the player to answer from multiple choice questions within a given time.
 # Screenshot
 
-<img src="https://imgur.com/a/WmvW1GZ">
-<img src="https://imgur.com/hRMO9rQ">
+<img src="https://i.imgur.com/kVbOltL.jpeg">
+<img src="https://i.imgur.com/hRMO9rQ.jpeg">
 
 # Technologies Used
 
