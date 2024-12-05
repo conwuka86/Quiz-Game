@@ -6,60 +6,60 @@ body {
 }
 
 body {
-    display: grid;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #dcd0d0;
-    margin: 0;
-    padding: 30px;
-    font-size: 35px;
-    min-height: 100vh;
-  }
-  
+  display: grid;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #dcd0d0;
+  margin: 0;
+  padding: 30px;
+  font-size: 35px;
+  min-height: 100vh;
+}
 
-  #quiz-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 40px;
-    background: rgb(205, 198, 198);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-spacing: 4px 4rem;
-    align-items: center;
-    justify-content:center;
-  }
+#quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  background: rgb(205, 198, 198);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-spacing: 4px 4rem;
+  align-items: center;
+  justify-content: center;
+}
 
-  .hidden {
-    display: none;
-  }
-  
-  button {
-    display: flex;
-    display: grid
-  }
-  button {
-    padding: 20px 40px;
-    margin-top: 30px;
-    background-color: #324252;
-    color: white;
-    border: dotted;
-    border-radius: 20px;
-    cursor: pointer;
-    border-spacing: 8px 20rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #category-select {
-    width: 200px;
-    height: 50px;
-    font-size: 22px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc; /* Optional: Adds a border */
-  }
-  
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+.hidden {
+  display: none;
+}
+
+button {
+  display: flex;
+  display: grid
+}
+
+button {
+  padding: 20px 40px;
+  margin-top: 30px;
+  background-color: #324252;
+  color: white;
+  border: dotted;
+  border-radius: 20px;
+  cursor: pointer;
+  border-spacing: 8px 20rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#category-select {
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* Optional: Adds a border */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
